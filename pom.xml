@@ -12,6 +12,7 @@
         <module>common/service_util</module>
         <module>service/service_user</module>
         <module>service/service_hosp</module>
+        <module>service/cmn</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

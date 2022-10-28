@@ -18,7 +18,8 @@ import java.util.List;
 import java.util.Random;
 
 @RestController
-@RequestMapping("/admin/hosp/hospital")
+@RequestMapping("/admin/hosp/hospitalSet")
+@CrossOrigin
 public class HospitalSetController {
     @Autowired
     private HospitalSetService hospitalSetService;
@@ -80,12 +81,12 @@ public class HospitalSetController {
 
     @GetMapping("getHospitalSet/{id}")
     public Result getHospitalSet(@PathVariable Long id){
-        try {
-            //模拟异常
-            int a = 1/0;
-        }catch (Exception e) {
-            throw new YyghException("失败",201);
-        }
+//        try {
+//            //模拟异常
+//            int a = 1/0;
+//        }catch (Exception e) {
+//            throw new YyghException("失败",201);
+//        }
 
         HospitalSet hospitalSet = hospitalSetService.getById(id);
 
