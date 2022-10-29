@@ -8,11 +8,6 @@
         <module>service</module>
         <module>service_client</module>
         <module>service_gateway</module>
-        <module>common/common_util</module>
-        <module>common/service_util</module>
-        <module>service/service_user</module>
-        <module>service/service_hosp</module>
-        <module>service/cmn</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
