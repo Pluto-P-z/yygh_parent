@@ -83,6 +83,7 @@ public class DepartmentServiceImpl implements DepartmentService {
         List<DepartmentVo> result = new ArrayList<>();
 
         //根据医院编号，查询医院所有科室信息
+        //为什么hoscode=1而不是1001_1
         Department departmentQuery = new Department();
         departmentQuery.setHoscode(hoscode);
         Example example = Example.of(departmentQuery);
